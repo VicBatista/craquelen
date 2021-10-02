@@ -1,0 +1,154 @@
+/* Fonts */
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  margin-top: 1em;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 1em;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.1em;
+}
+nav ul li button {
+  background-color: none;
+  border: none;
+  padding: none;
+  position: absolute;
+}
+nav ul li a {
+  color: #202527;
+  text-decoration: none;
+}
+nav ul li i {
+  font-size: 1.5em;
+  color: #202527;
+}
+nav .counter-carrito {
+  font-family: "Overpass", sans-serif;
+  color: #f2f2f2;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #c06835;
+  border-radius: 50%;
+  text-align: center;
+  align-self: center;
+  position: relative;
+  margin: -15px 5px 8px -6px;
+}
+nav .logo-img {
+  display: inline-flex;
+  width: auto;
+}
+nav .logo-img img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Fin Navbar */
+main {
+  width: 100%;
+}
+main h1 {
+  font-family: "Playfair Display", serif;
+  color: #605c34;
+  text-shadow: 2px 2px 3px #A29B58;
+  font-size: 2.2em;
+  margin: 2em;
+  margin-top: 1em;
+}
+
+.shop-container {
+  margin: 0;
+}
+.shop-container .card {
+  border: solid #c06835 1px;
+  margin: 2em;
+}
+.shop-container .contenedor-productos {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.shop-container .contenedor-productos h2 {
+  font-size: 1.3em;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.shop-container .contenedor-productos h3 {
+  font-size: 1.3em;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  margin: 1em;
+  text-shadow: 1px 0px 2px rgba(32, 37, 39, 0.67);
+}
+.shop-container .contenedor-productos .btn-primary {
+  font-family: "Overpass", sans-serif;
+  border-radius: 5px;
+  background-color: #605c34;
+  border: none;
+  font-size: 1.2em;
+  color: #f2f2f2;
+  padding: 0.3em;
+  margin: 1em auto;
+  display: flex;
+  justify-self: center;
+}
+.shop-container .contenedor-productos .btn-primary:hover {
+  background-color: #858047;
+  cursor: pointer;
+}
+
+.product-title {
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+  color: #202527;
+  text-align: center;
+  margin: 0.6em;
+  text-transform: uppercase;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 30px;
+  border: none;
+}
+.counter button {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
+.counter .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #c06835;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+.counter .quant {
+  background-color: none;
+  border-radius: 0;
+  border: none;
+  width: 60px;
+  color: #202527;
+}
+
+/*# sourceMappingURL=style.css.map */

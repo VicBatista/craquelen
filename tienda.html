@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,400;1,100;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/093f9dce09.js" crossorigin="anonymous"></script>
+    <title>Craquelén</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+            <ul class="col-4">
+                <li><a href="#nosotras">Nosotras</a></li>
+                <li><a href="#mayoristas">Mayoristas</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="logo-img" id="logo" class="col-4">
+                <a href="index.html"><img src="https://i.ibb.co/hZbhLmp/Whats-App-Image-2021-09-21-at-10-48-02.jpg" alt="Logo Craquelén"></a>
+            </div>
+            <ul class="col-4 justify-content-end">
+                <li><a href="https://www.instagram.com/craquelen/"><i class="fab fa-instagram"></i></a></li>
+                <li><button id= "display-cart" type="button"  data-bs-toggle="modal" data-bs-target="#modalCart"><i class="fas fa-shopping-cart"></i><span id="counter-carrito">0</span></button>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <main>
+        <div id="contenedorTienda" class="row justify-content-center shop-container">
+            <!-- Product Card 
+            <div class="contenedor-productos card col-3">
+                <img src="img/macarons-surtidos.jpg" class="d-block w-100 card-img-top m-3" alt="Macarons surtidos">
+                <div class="card-body p-1">
+                    <h2>Caja de 6 macarons</h2>
+                    <h3 id="price">$700</h3>
+                    <button class="btn-primary" id="btnAdd">Agregar</button>
+                </div>
+            </div> -->
+        </div>
+        <div id="modalCart" class="modal fade modal-contenedor" tabindex="-1" aria-labelledby="modalCart" aria-hidden="true"  data-bs-keyboard="false" data-bs-backdrop="false">
+            <div id="modal-cart" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mi compra</h5>
+                        <button id="close-cart" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="cart-container" class="modal-body">
+                        <!--
+                        <div class="productoAgregado">
+                            <p>Producto</p>
+                            <p>Precio: $</p>
+                            <p id="quant">Cantidad</p>
+                            <div class="counter">
+                                <button type="button" id="minus" class="btn">-</button>
+                                <button type="button" id="quantity" class="quant">0</button>
+                                <button type="button" id="plus" class="btn">+</button>
+                            </div>
+                            <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                         -->  
+                    </div>                
+                    <div class="modal-footer">
+                        <p class="precioProducto">Precio total: $<span id="totalPrice"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Desarrollado por Victoria Batista</h3>
+    </footer>
+    
+    <!-- Script de JS -->
+    <script src="js/productos.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
