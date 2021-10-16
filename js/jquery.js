@@ -17,7 +17,22 @@ class Producto {
 }
 
 //Creo cards con cada producto
-verProductos(productos);
+let stockProductos = [];
+function recuperarStock() {
+    let stock = JSON.parse(localStorage.getItem('stock'))
+    if (stock) {
+        stock.forEach(el => stockProductos.push(el));
+    }
+}
+
+$.getJSON('js/stock.json', function (data) {
+    console.log(data);
+    localStorage.setItem('stock', JSON.stringify(data));
+    recuperarStock();
+    verProductos(data);
+    recuperar();
+    }
+)
 
 function verProductos(array) {
     $('#contenedorTienda').html = '';
@@ -43,7 +58,7 @@ function verProductos(array) {
             agregarAlCarrito(producto.id);
         
             $(`#btnAdd${producto.id}`).text(`Agregado!`)
-        }
+            }
         )
     }   
 }
@@ -58,7 +73,7 @@ function agregarAlCarrito(id) {
         actualizarCarrito();
 
     }else {
-        let prodAdd = productos.find(prod => prod.id == id);
+        let prodAdd = stockProductos.find(prod => prod.id == id);
         
         carrito.push(prodAdd);
         prodAdd.quant = 1;
@@ -88,10 +103,17 @@ function agregarAlCarrito(id) {
         $(`#eliminar${prodAdd.id}`).on('click', ()=>{
             btnEliminar.parentElement.remove()
             carrito = carrito.filter(prodE => prodE.id != prodAdd.id);
-            
+            localStorage.setItem('carrito', JSON.stringify(carrito));
             actualizarCarrito()
-        }
-        ) 
+        }) 
+    } localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+function recuperar() {
+    let recuperar = JSON.parse(localStorage.getItem('carrito'))
+    if (recuperar) {
+        recuperar.forEach(el => {
+            agregarAlCarrito(el.id)           
+        });        
     }
     
 }
@@ -99,4 +121,4 @@ function agregarAlCarrito(id) {
 function actualizarCarrito() {
     $('#counter-carrito').text(carrito.reduce((acc, el)=> acc + el.quant,0));
     $('#totalPrice').text(carrito.reduce((acc,el)=> acc + (el.price * el.quant),0));
-}
+};

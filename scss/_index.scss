@@ -51,12 +51,19 @@ nav{
         }
     }
 }
+.carousel {
+    position: relative;
+}
 /* Fin Navbar */
 main {
     width: 100%;
     h1 {
+        position: absolute;
         font-family: $font-title;
         color: $color-4;
+        text-align: right;
+        
+
         text-shadow: 2px 2px 3px #A29B58;
         font-size: 2.2em;
         margin: 2em;
