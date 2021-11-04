@@ -5,7 +5,7 @@
 /* Navbar */
 nav{
     width: 100%;
-    margin-top: 1em;
+    background-color: $color-1;
     ul {
         display: flex;
         li{
@@ -14,22 +14,25 @@ nav{
             font-family: $font-subtitle;
             font-size: 1.1em;
             button {
-                background-color: none;
+                background-color: $color-1;
                 border: none;
                 padding: none;
                 position: absolute;
             }
             a{
-                color: $color-6;
+                color: $color-2;
                 text-decoration: none;
             }
             i {
                 font-size: 1.5em;
-                color: $color-6;
+                color: $color-2;
             }
         }
+        :hover {
+            color: $color-3
+        }
     }
-    .counter-carrito{
+    #counter-carrito{
         font-family: $font-subtitle;
         color: $color-2;
         width: 30px;
@@ -69,7 +72,7 @@ main {
             font-family: $font-title;
             color: $color-2;
             text-align: center;
-            text-shadow: 2px 2px 3px $color-6;
+            text-shadow: 2px 2px 3px $color-5;
             font-size: 3em;
             }
         }
@@ -80,19 +83,38 @@ main {
 
 section {
     margin-top: 2em;
-    .row {
-        
+    .nosotrasSection, .mayoristasSection{
+        position: relative;
+        #nosotrasContainer {
+            background-color: $color-4;
+            border-radius: 0px 180px 180px 0px;
+            position: relative;
+        }    
+        img {
+            display:inline-block;
+            position: absolute;
+            right: 5%;
+            top: -7px;
+        }
+        #mayoristasContainer {
+            border: solid 20px $color-3;
+            border-radius: 180px 0 0px 180px;
+            position: relative;
+            margin: 3em 0 0 0;
+        }
+    }
+    
         h2 {
-            font-family: $font-subtitle;
+            font-family: $font-title;
             font-size: 3em;
-            color: $color-4;
-            margin: 1em 1em 1em 1em;
-
+            color: $color-2;
+            margin: 0.5em 1em 0 0.5em;
         }
         p {
             font-family: $font-subtitle;
             font-size: 1.5em;
             margin: 1em;
+            color: $color-2;
         }
-    }
+    
 }

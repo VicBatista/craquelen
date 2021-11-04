@@ -8,7 +8,7 @@
 /* Navbar */
 nav {
   width: 100%;
-  margin-top: 1em;
+  background-color: #B86730;
 }
 nav ul {
   display: flex;
@@ -20,26 +20,29 @@ nav ul li {
   font-size: 1.1em;
 }
 nav ul li button {
-  background-color: none;
+  background-color: #B86730;
   border: none;
   padding: none;
   position: absolute;
 }
 nav ul li a {
-  color: #202527;
+  color: #FFFFFF;
   text-decoration: none;
 }
 nav ul li i {
   font-size: 1.5em;
-  color: #202527;
+  color: #FFFFFF;
 }
-nav .counter-carrito {
+nav ul :hover {
+  color: #FAAC02;
+}
+nav #counter-carrito {
   font-family: "Overpass", sans-serif;
-  color: #f2f2f2;
+  color: #FFFFFF;
   width: 30px;
   height: 30px;
   padding: 5px;
-  background-color: #c06835;
+  background-color: #B86730;
   border-radius: 50%;
   text-align: center;
   align-self: center;
@@ -74,9 +77,9 @@ main .carousel .carousel-caption {
 }
 main .carousel .carousel-caption h1 {
   font-family: "Playfair Display", serif;
-  color: #f2f2f2;
+  color: #FFFFFF;
   text-align: center;
-  text-shadow: 2px 2px 3px #202527;
+  text-shadow: 2px 2px 3px #011C40;
   font-size: 3em;
 }
 
@@ -84,23 +87,44 @@ main .carousel .carousel-caption h1 {
 section {
   margin-top: 2em;
 }
-section .row h2 {
-  font-family: "Overpass", sans-serif;
-  font-size: 3em;
-  color: #605c34;
-  margin: 1em 1em 1em 1em;
+section .nosotrasSection, section .mayoristasSection {
+  position: relative;
 }
-section .row p {
+section .nosotrasSection #nosotrasContainer, section .mayoristasSection #nosotrasContainer {
+  background-color: #037F8C;
+  border-radius: 0px 180px 180px 0px;
+  position: relative;
+}
+section .nosotrasSection img, section .mayoristasSection img {
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -7px;
+}
+section .nosotrasSection #mayoristasContainer, section .mayoristasSection #mayoristasContainer {
+  border: solid 20px #FAAC02;
+  border-radius: 180px 0 0px 180px;
+  position: relative;
+  margin: 3em 0 0 0;
+}
+section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  color: #FFFFFF;
+  margin: 0.5em 1em 0 0.5em;
+}
+section p {
   font-family: "Overpass", sans-serif;
   font-size: 1.5em;
   margin: 1em;
+  color: #FFFFFF;
 }
 
 .shop-container {
   margin: 0;
 }
 .shop-container .card {
-  border: solid #c06835 1px;
+  border: solid #B86730 1px;
   margin: 2em;
 }
 .shop-container .contenedor-productos {
@@ -123,10 +147,10 @@ section .row p {
 .shop-container .contenedor-productos .btn-primary {
   font-family: "Overpass", sans-serif;
   border-radius: 5px;
-  background-color: #605c34;
+  background-color: #037F8C;
   border: none;
   font-size: 1.2em;
-  color: #f2f2f2;
+  color: #FFFFFF;
   padding: 0.3em;
   margin: 1em auto;
   display: flex;
@@ -140,7 +164,7 @@ section .row p {
 .product-title {
   font-family: "Overpass", sans-serif;
   font-size: 1em;
-  color: #202527;
+  color: #D96281;
   text-align: center;
   margin: 0.6em;
   text-transform: uppercase;
@@ -162,13 +186,13 @@ section .row p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #c06835;
+  background-color: #B86730;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   font-family: "Overpass", sans-serif;
-  color: #f2f2f2;
+  color: #FFFFFF;
   cursor: pointer;
 }
 .counter .quant {
@@ -176,7 +200,7 @@ section .row p {
   border-radius: 0;
   border: none;
   width: 60px;
-  color: #202527;
+  color: #D96281;
 }
 
 /*# sourceMappingURL=style.css.map */
