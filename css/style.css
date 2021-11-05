@@ -17,7 +17,8 @@ nav ul li {
   list-style: none;
   margin: 1em;
   font-family: "Overpass", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 nav ul li button {
   background-color: #B86730;
@@ -30,7 +31,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li i {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #FFFFFF;
 }
 nav ul :hover {
@@ -59,6 +60,71 @@ nav .logo-img img {
 }
 
 /* Fin Navbar */
+/* Whatsapp */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #5f3519;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+/* Fin Whatsapp */
+/* Footer */
+footer {
+  background-color: #B86730;
+  font-family: "Overpass", sans-serif;
+  color: #FFFFFF;
+  margin-top: 1em;
+}
+footer .blockInfo {
+  margin: 2em;
+}
+footer .blockInfo h2 {
+  font-family: "Overpass", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 1em;
+}
+footer .blockInfo .info {
+  margin-left: 1em;
+}
+footer .blockInfo .info i {
+  color: #FFFFFF;
+}
+footer .blockInfo .info p {
+  font-family: "Overpass", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-top: 1em;
+}
+footer .footer-derechos {
+  border-top: 1px solid #663a1d;
+  padding: 25px 0;
+}
+footer .footer-derechos h3 {
+  font-family: "Overpass", sans-serif;
+  color: #663a1d;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Fin de Footer */
 /* Carousel index */
 main {
   width: 100%;
@@ -95,6 +161,18 @@ section .nosotrasSection #nosotrasContainer, section .mayoristasSection #nosotra
   border-radius: 0px 180px 180px 0px;
   position: relative;
 }
+section .nosotrasSection #nosotrasContainer h2, section .mayoristasSection #nosotrasContainer h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  color: #FFFFFF;
+  margin: 0.5em 1em 0 0.5em;
+}
+section .nosotrasSection #nosotrasContainer p, section .mayoristasSection #nosotrasContainer p {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5em;
+  margin: 1em;
+  color: #FFFFFF;
+}
 section .nosotrasSection img, section .mayoristasSection img {
   display: inline-block;
   position: absolute;
@@ -103,28 +181,49 @@ section .nosotrasSection img, section .mayoristasSection img {
 }
 section .nosotrasSection #mayoristasContainer, section .mayoristasSection #mayoristasContainer {
   border: solid 20px #FAAC02;
-  border-radius: 180px 0 0px 180px;
+  border-right: none;
+  border-radius: 220px 0 0px 220px;
+  margin: 5em 0 0 0;
+  padding: 0;
   position: relative;
-  margin: 3em 0 0 0;
 }
-section h2 {
+section .nosotrasSection #mayoristasContainer img, section .mayoristasSection #mayoristasContainer img {
+  display: inline-block;
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  height: 320px;
+}
+section .nosotrasSection #mayoristasContainer .mayoristasContainerBis, section .mayoristasSection #mayoristasContainer .mayoristasContainerBis {
+  border: solid 10px #FAAC02;
+  border-radius: 200px 0 0px 200px;
+  border-right: none;
+  position: relative;
+  margin: 0.5em 0 0.5em 0.5em;
+  display: grid;
+}
+section .nosotrasSection #mayoristasContainer .mayoristasContainerBis h2, section .mayoristasSection #mayoristasContainer .mayoristasContainerBis h2 {
   font-family: "Playfair Display", serif;
   font-size: 3em;
-  color: #FFFFFF;
-  margin: 0.5em 1em 0 0.5em;
+  color: #FAAC02;
+  margin: 0.5em 0.5em 0 0.5em;
+  text-align: right;
 }
-section p {
+section .nosotrasSection #mayoristasContainer .mayoristasContainerBis p, section .mayoristasSection #mayoristasContainer .mayoristasContainerBis p {
   font-family: "Overpass", sans-serif;
   font-size: 1.5em;
   margin: 1em;
-  color: #FFFFFF;
+  color: #FAAC02;
+  text-align: right;
+  justify-self: right;
 }
 
+/* Tienda */
 .shop-container {
   margin: 0;
 }
 .shop-container .card {
-  border: solid #B86730 1px;
+  border: solid #D96281 1px;
   margin: 2em;
 }
 .shop-container .contenedor-productos {
@@ -136,13 +235,15 @@ section p {
   font-size: 1.3em;
   font-family: "Playfair Display", serif;
   text-align: center;
+  color: #011C40;
 }
 .shop-container .contenedor-productos h3 {
   font-size: 1.3em;
   font-family: "Overpass", sans-serif;
   text-align: center;
   margin: 1em;
-  text-shadow: 1px 0px 2px rgba(32, 37, 39, 0.67);
+  color: #FAAC02;
+  text-shadow: 1px 0px 2px #5f3519;
 }
 .shop-container .contenedor-productos .btn-primary {
   font-family: "Overpass", sans-serif;
@@ -157,7 +258,7 @@ section p {
   justify-self: center;
 }
 .shop-container .contenedor-productos .btn-primary:hover {
-  background-color: #858047;
+  background-color: #011C40;
   cursor: pointer;
 }
 
@@ -181,6 +282,13 @@ section p {
   font-family: "Overpass", sans-serif;
   font-size: 1.1em;
   padding: 0.5em;
+}
+.counter .boton-eliminar {
+  background-color: none;
+  border: none;
+}
+.counter .boton-eliminar .fa-trash-alt {
+  color: #D96281;
 }
 .counter .btn {
   width: 40px;

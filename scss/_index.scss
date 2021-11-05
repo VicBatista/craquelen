@@ -1,60 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-/* Navbar */
-nav{
-    width: 100%;
-    background-color: $color-1;
-    ul {
-        display: flex;
-        li{
-            list-style: none;
-            margin: 1em;
-            font-family: $font-subtitle;
-            font-size: 1.1em;
-            button {
-                background-color: $color-1;
-                border: none;
-                padding: none;
-                position: absolute;
-            }
-            a{
-                color: $color-2;
-                text-decoration: none;
-            }
-            i {
-                font-size: 1.5em;
-                color: $color-2;
-            }
-        }
-        :hover {
-            color: $color-3
-        }
-    }
-    #counter-carrito{
-        font-family: $font-subtitle;
-        color: $color-2;
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-        background-color: $color-1;
-        border-radius: 50%;
-        text-align: center;
-        align-self: center;
-        position: relative;
-        margin: -15px 5px 8px -6px;
-    }
-    .logo-img {
-        display: inline-flex;
-        width: auto;
-        img{
-            width: 150px;
-            height: 150px;
-        }
-    }
-}
-/* Fin Navbar */
 /* Carousel index */
 main {
     width: 100%;
@@ -89,6 +32,18 @@ section {
             background-color: $color-4;
             border-radius: 0px 180px 180px 0px;
             position: relative;
+            h2 {
+                font-family: $font-title;
+                font-size: 3em;
+                color: $color-2;
+                margin: 0.5em 1em 0 0.5em;
+            }
+            p {
+                font-family: $font-subtitle;
+                font-size: 1.5em;
+                margin: 1em;
+                color: $color-2;
+            }
         }    
         img {
             display:inline-block;
@@ -98,23 +53,45 @@ section {
         }
         #mayoristasContainer {
             border: solid 20px $color-3;
-            border-radius: 180px 0 0px 180px;
+            border-right: none;
+            border-radius: 220px 0 0px 220px;
+            margin: 5em 0 0 0;
+            padding: 0; 
             position: relative;
-            margin: 3em 0 0 0;
+            img {
+                display:inline-block;
+                position: absolute;
+                left: -70px;
+                top: -30px;
+                height: 320px;
+            }
+            .mayoristasContainerBis {
+                border: solid 10px $color-3;
+                border-radius: 200px 0 0px 200px;
+                border-right: none;
+                position: relative;
+                margin: 0.5em 0 0.5em 0.5em; 
+                display: grid;
+                h2 {
+                    font-family: $font-title;
+                    font-size: 3em;
+                    color: $color-3;
+                    margin: 0.5em 0.5em 0 0.5em;
+                    text-align: right;
+                }
+                p {
+                    font-family: $font-subtitle;
+                    font-size: 1.5em;
+                    margin: 1em;
+                    color: $color-3;
+                    text-align: right;
+                    justify-self: right;
+                }
+                
+            }    
+               
         }
     }
     
-        h2 {
-            font-family: $font-title;
-            font-size: 3em;
-            color: $color-2;
-            margin: 0.5em 1em 0 0.5em;
-        }
-        p {
-            font-family: $font-subtitle;
-            font-size: 1.5em;
-            margin: 1em;
-            color: $color-2;
-        }
-    
+
 }

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+nav{
+    width: 100%;
+    background-color: $color-1;
+    ul {
+        display: flex;
+        li{
+            list-style: none;
+            margin: 1em;
+            font-family: $font-subtitle;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            button {
+                background-color: $color-1;
+                border: none;
+                padding: none;
+                position: absolute;
+            }
+            a{
+                color: $color-2;
+                text-decoration: none;
+            }
+            i {
+                font-size: 1.3em;
+                color: $color-2;
+                
+            }
+        }
+        :hover {
+            color: $color-3
+        }
+        
+    }
+    #counter-carrito{
+        font-family: $font-subtitle;
+        color: $color-2;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        background-color: $color-1;
+        border-radius: 50%;
+        text-align: center;
+        align-self: center;
+        position: relative;
+        margin: -15px 5px 8px -6px;
+    }
+    .logo-img {
+        display: inline-flex;
+        width: auto;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+/* Fin Navbar */
+/* Whatsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #5f3519;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+/* Fin Whatsapp */
+/* Footer */
+footer {
+    background-color: $color-1;
+    font-family: $font-subtitle;
+    color: $color-2;
+    margin-top: 1em;
+    .blockInfo{
+        margin: 2em;
+
+    
+        h2 {
+            font-family: $font-subtitle;
+            color: $color-2;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 1em;
+        }
+        .info {
+            margin-left: 1em;
+            i{
+                color: $color-2;
+            }
+            p {
+                font-family: $font-subtitle;
+                font-size: 1em;
+                font-weight: 300;
+                display: inline-block;
+                margin-left: 0.5em;
+                margin-top: 1em;
+            }
+        }
+    }
+    .footer-derechos {
+        border-top: 1px solid #663a1d;
+        padding: 25px 0;
+        h3 {
+            font-family: $font-subtitle;
+            color: #663a1d;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    }
+}
+/* Fin de Footer */
